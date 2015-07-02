@@ -10,10 +10,13 @@
   <body>
 
     <div class="header">
-      <h1><i class="fa fa-bars menu-button"></i> mooi <span class="back-button"><a href="javascript:history.back()"><i class="fa fa-arrow-left"></i></a> </h1>
+      <h1><i class="fa fa-bars fa-fw menu-button"></i> mooi <!--<span class="back-button"><a href="javascript:history.back()"><i class="fa fa-long-arrow-left fa-fw"></i></a> --></h1>
     </div>
 
     <section id="start" src="pages/start.html" default></section>
+    <section id="new" src="pages/new.html"></section>
+    <section id="saved" src="pages/saved.html"></section>
+    <section id="settings" src="pages/settings.html"></section>
 
     <div class="footer">
     </div>
@@ -21,9 +24,10 @@
     <!-- menu -->
     <div class="menu">
       <ul>
-        <li><i class="fa fa-plus fa-fw"></i> Nytt</li>
-        <li><i class="fa fa-cloud fa-fw"></i> Sparat</li>
-        <li><i class="fa fa-cog fa-fw"></i>Inställningar</li>
+        <a href="#start"><li><i class="fa fa-home fa-fw"></i> Start</li></a>
+        <a href="#new"><li><i class="fa fa-plus fa-fw"></i> Nytt</li></a>
+        <a href="#saved"><li><i class="fa fa-cloud fa-fw"></i> Sparat</li></a>
+        <a href="#settings"><li><i class="fa fa-cog fa-fw"></i>Inställningar</li></a>
       </ul>
     </div>
 

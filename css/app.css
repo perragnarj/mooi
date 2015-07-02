@@ -30,7 +30,9 @@ a {
 body section { display:none; }
 
 body.start section#start,
-body.other section#other {
+body.new section#new,
+body.saved section#saved,
+body.settings section#settings {
 	display:block;
 	}
 
@@ -78,9 +80,12 @@ body.other section#other {
 }
 .menu ul li {
 	padding:12% 4%;
-	border-bottom:1px solid #e0e0e0;
 }
-.menu ul li:last-of-type {
+.menu ul li a {
+	border-bottom:1px solid #e0e0e0;
+	overflow:auto;
+}
+.menu ul li a:last-of-type {
 	border-bottom:none;
 }
 .menu ul li i {
@@ -93,8 +98,8 @@ body.other section#other {
 .page {
 	box-sizing:border-box;
 	text-align:center;
-	margin-top:17vh;
 	width:100vw;
+	padding:10%;
 }
 .page a.button {
 	margin:5vh auto 0 auto;
