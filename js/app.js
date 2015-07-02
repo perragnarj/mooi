@@ -13,7 +13,8 @@ $(function () {
 
   menuChoice.click(function () {
     menu.transition({left:'-265px'});
-    $(this).find('li').toggleClass('sel')
+    menuChoice.find('li').removeClass('sel');
+    $(this).find('li').addClass('sel');
   })
 
   // set back button if not start page
