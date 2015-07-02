@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900);
+
+/* general */
+* {
+	box-sizing:border-box;
+}
+html {
+	height:100%;
+}
+body {
+	padding:0;
+	margin:0;
+	background:#4cb8c4;
+	background-image:linear-gradient(135deg,#4cb8c4,#3cd3ad);
+	font-family:'Roboto';
+	font-size:16px;
+	color:white;
+}
+h1,h2,h3,h4,h5 {
+	margin:0;
+	padding:0;
+}
+a {
+	color:inherit;
+	text-decoration:none
+}
+.blue-color {
+	color:#3498db;
+}
+::-webkit-input-placeholder {
+	color:#99d5ff;
+}
+
+/* routing */
+body section { display:none; }
+
+body.start section#start,
+body.player section#player,
+body.find-game section#find-game,
+body.host section#host { display:block; }
+
+/* header */
+.header {
+	background:rgba(0, 0, 0, 0.1);
+	padding:3%;
+}
+.header h1 {
+	font-size:1.4rem;
+}
+.header h1 i.logo {
+	padding-right:2%;
+}
+.header h1 .back-button {
+	display:none;
+	padding-top:0.5%;
+	padding-right:3%;
+	float:right;
+}
+
+/* page */
+.page {
+	box-sizing:border-box;
+	text-align:center;
+	margin-top:17vh;
+	width:100vw;
+}
+.page a.button {
+	margin:5vh auto 0 auto;
+	display:block;
+	background:#F44336;
+	border:none;
+	border-bottom:5px solid #C62828;
+	border-radius:10px;
+	padding:4% 10%;
+	font-size:1.2rem;
+	font-weight:600;
+	text-transform:uppercase;
+	color:white;
+	width:70vw;
+	outline:none;
+}
+
+.page input[type="text"] {
+	margin:10% auto;
+	display:block;
+	background:transparent;
+	border:none;
+	border-bottom:5px solid white;
+	padding:3% 0;
+	font-size:1.2rem;
+	font-weight:600;
+	text-transform:uppercase;
+	width:70vw;
+	color:white;
+	outline:none;
+}
+
+/* player */
+#player .avatar-icon {
+	font-size:2em;
+	margin-bottom:10%;
+}
+
+/* footer */
+.footer {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	bottom:0px;
+	padding:3%;
+}
+
+/* settings */
+.settings {
+	box-sizing:border-box;
+	display:none;
+	position:fixed;
+	right:10px;
+	top:45px;
+	width:200px;
+	height:300px;
+	background:white;
+	color:#ccc;
+	padding:20px;
+	border-radius:5px;
+	box-shadow:5px 5px 5px #7CB342;
+}
