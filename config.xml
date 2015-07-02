@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
           xmlns:gap = "http://phonegap.com/ns/1.0"
-          id        = "macaw"
+          id        = "mooi"
           versionCode="10"
           version   = "0.1">
 
       <!-- versionCode is optional and Android only -->
 
-      <name>Macaw</name>
+      <name>mooi</name>
 
       <description>
-          Party-quizzen
+          en app
       </description>
 
       <author>
-          Macaw
+          Per-Ragnar Jonsson
       </author>
 
       <icon src="icon.png" />
