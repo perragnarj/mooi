@@ -17,7 +17,7 @@ body {
 	color:white;
 }
 h1,h2,h3,h4,h5 {
-	font-weight:400;
+	font-weight:500;
 	margin:0;
 	padding:0;
 }
@@ -38,48 +38,59 @@ body.settings section#settings {
 
 /* header */
 .header {
-	background:rgba(0, 0, 0, 0.1);
-	height:50px;
-	display:table;
+	background:#3fa7a7;
+	height:60px;
 	width:100%;
-	padding-top:10px;
-	padding-left:4%;
+	display:table;
 }
 .header h1 {
 	font-size:1.4rem;
 	vertical-align:middle;
+	display:table-cell;
+	width:auto;
+	padding-left:20px;
 }
-.header h1 i {
-	padding-right:4%;
-	font-size:1.48rem;
+.header .menu-button {
+	height:60px;
+	width:60px;
+	display:table-cell;
+	background:#348888;
+	text-align:center;
 	vertical-align:middle;
+	font-size:1.38em;
 }
-.header h1 .back-button {
+/*.header h1 .back-button {
 	display:none;
 	padding-top:0.5%;
 	padding-right:3%;
 	float:right;
-}
+}*/
 
 /* menu */
 .menu {
 	box-sizing:border-box;
 	position:absolute;
-	left:-300px;
-	top:50px;
+	left:-265px;
 	bottom:0;
-	width:300px;
+	top:60px;
+	width:260px;
 	background:white;
 	color:#888;
-	box-shadow:5px 5px 5px rgba(0, 0, 0, 0.1);;
+	box-shadow:5px 5px 5px #3da1a1;
 }
 .menu ul {
 	margin:0;
-	padding:0 12%;
+	padding:0 5%%;
 	list-style-type:none;
+	border-bottom:1px solid #f8f8f8;
 }
 .menu ul li {
-	padding:12% 4%;
+	padding:10%;
+}
+.menu ul li.sel {
+	background:#888;
+	color:white;
+	border-radius:5px;
 }
 .menu ul li a {
 	border-bottom:1px solid #e0e0e0;
@@ -90,7 +101,7 @@ body.settings section#settings {
 }
 .menu ul li i {
 	font-size:1.3em;
-	margin-right:9%;
+	margin-right:10%;
 	opacity:0.6;
 }
 

@@ -7,12 +7,13 @@ $(function () {
     if (menu.position().left < 0) {
       menu.transition({left:'0'});
     } else {
-      menu.transition({left:'-300px'});
+      menu.transition({left:'-265px'});
     }
   });
 
   menuChoice.click(function () {
-    menu.transition({left:'-300px'});
+    menu.transition({left:'-265px'});
+    $(this).find('li').toggleClass('sel')
   })
 
   // set back button if not start page
